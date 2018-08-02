@@ -6,39 +6,39 @@
   <nav class="navbar  navbar-expand-lg navbar-light " style="background-color: #FFBF43; display:block">
 
     <div class="container d-flex flex-column flex-md-row justify-content-between">
-<a class="navbar-brand"  style="color:white"href="#"><img class="d-inline-block align-top" src="icons/menu/miel.png" alt="" width="30" height="30">Apiarios HerGar</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
-  <ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="/#!/" style="color:white">Inicio <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="#!productos" style="color:white">Productos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="#!contacto" style="color:white">Contacto</a>
-    </li>
-    <li class="nav-item" id="menu"  >
-      <a class="nav-link active" href="#!login" style="color:white" >Iniciar Sesion</a>
-    </li>
-    <li class="nav-item dropdown" style="display:none" id="logd">
-      <a class="nav-link active dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        {{user}}
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#!pedidos">Mis Pedidos</a>
-        <a class="dropdown-item" href="#!cambiarcontraseña">Cambiar Contraseña</a>
-        <a class="dropdown-item" href="/logout">Cerrar Session</a>
+      <a class="navbar-brand"  style="color:white"href=""><img class="d-inline-block align-top" src="icons/menu/miel.png" alt="" width="30" height="30">Apiarios HerGar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/#!/" style="color:white">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#!productos" style="color:white">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#!contacto" style="color:white">Contacto</a>
+          </li>
+          <li class="nav-item" id="menu"  >
+            <a class="nav-link active" href="#!login" style="color:white" >Iniciar Sesion</a>
+          </li>
+          <li class="nav-item dropdown" style="display:none" id="logd">
+            <a class="nav-link active dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{user}}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#!pedidos">Mis Pedidos</a>
+              <a class="dropdown-item" href="#!cambiarcontraseña">Cambiar Contraseña</a>
+              <a class="dropdown-item" href="/logout">Cerrar Session</a>
+            </div>
+          </li>
+        </ul>
       </div>
-    </li>
-  </ul>
-</div>
-</div>
-</nav>
+    </div>
+  </nav>
 
-<div ng-include="'_login.html'"></div>
 
-  </div>
+
+</div>

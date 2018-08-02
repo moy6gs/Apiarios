@@ -263,14 +263,14 @@ app.post('/uploadimg', function (req, res){
   });
 
   form.on('fileBegin', function (name, file){
-    file.path = __dirname + '/img/' +name;
+    file.path = __dirname + '/img/'+file.name;
   });
 
   form.on('file', function (name, file){
     console.log('Uploaded ' + file.name);
   });
 
-  res.redirect('/gracias.html')
+  res.redirect('/#!/gracias')
 });
 
 app.get('/comentarios',(req,res)=>{

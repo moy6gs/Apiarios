@@ -1,113 +1,113 @@
 <div  class="container"  style="background-color:#F8F9FA;">
-<div align="center" >
-<div class="col-md-8 order-md-1">
-          <h4 class="mb-3">Registrarse</h4>
-          <form class="needs-validation" novalidate>
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">Nombre</label>
-                <input type="text" class="form-control"  ng-model="nom" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Apellido Paterno</label>
-                <input type="text" ng-model="ap" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-
-              <div class="col-md-6 mb-3">
-                <label for="lastNamem">Apellido Materno</label>
-                <input type="text" class="form-control" ng-model="am"id="lastNamem" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-
-              <div class="col-md-6 mb-3">
-                <label for="tel">Telefono</label>
-                <input type="text" class="form-control" ng-model="phone" id="tel" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-
+  <div align="center" >
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Registrarse</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control"  ng-model="nom" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
             </div>
-
-
-            <div class="mb-3">
-              <label for="address">Direccion</label>
-              <input type="text" class="form-control" ng-model="dire"id="address"  required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido Paterno</label>
+            <input type="text" ng-model="ap" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
             </div>
+          </div>
 
-
-            <div class="mb-3">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" ng-model="email" id="email" >
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastNamem">Apellido Materno</label>
+            <input type="text" class="form-control" ng-model="am"id="lastNamem" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
             </div>
+          </div>
 
-
-            <div class="mb-3">
-              <label for="addressb">Fecha de Nacimiento</label>
-              <input type="date" class="form-control" ng-model="birthdate" id="addressb"  required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
+          <div class="col-md-6 mb-3">
+            <label for="tel">Telefono</label>
+            <input type="text" class="form-control" ng-model="phone" id="tel" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
             </div>
-            <div class="mb-3">
-              <label for="address2">Direccion Fiscal</label>
-              <input type="text" class="form-control" id="address2" ng-model="diref" >
-            </div>
-            <div class="mb-3">
-              <label for="rfc">RFC</label>
-              <input type="text" class="form-control"  ng-model="rfc" id="rfc" >
-            </div>
-
-            <div class="row">
-              <div class="col-md-5 mb-3">
-                <label for="sex">Sexo</label>
-                <select class="custom-select d-block w-100" id="sex" ng-model="sexo" required>
-                  <option value="">Choose...</option>
-                  <option value="Hombre">Hombre</option>
-                  <option value="Mujer">Mujer</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please select a valid country.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="user">Usuario</label>
-                <input type="text" class="form-control" ng-model="user" id="user"  value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="pass">Contraseña</label>
-                <input type="password" class="form-control" ng-model="pass"id="pass" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid last name is required.
-                </div>
-              </div>
-
-
-              <div class="alert alert-danger" role="alert"id="ale" style="display:none" >
-                <p>Todos los campos son obligatorios<P>
-
-              </div>
-            </div>
-              <button class="btn btn-primary"  style="background-color: #FFBF43;"ng-click="valores()">Registarme</button>
           </div>
 
         </div>
 
+
+        <div class="mb-3">
+          <label for="address">Direccion</label>
+          <input type="text" class="form-control" ng-model="dire"id="address"  required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
         </div>
+
+
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" ng-model="email" id="email" >
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="addressb">Fecha de Nacimiento</label>
+          <input type="date" class="form-control" ng-model="birthdate" id="addressb"  required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address2">Direccion Fiscal</label>
+          <input type="text" class="form-control" id="address2" ng-model="diref" >
+        </div>
+        <div class="mb-3">
+          <label for="rfc">RFC</label>
+          <input type="text" class="form-control"  ng-model="rfc" id="rfc" >
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="sex">Sexo</label>
+            <select class="custom-select d-block w-100" id="sex" ng-model="sexo" required>
+              <option value="">Choose...</option>
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="user">Usuario</label>
+            <input type="text" class="form-control" ng-model="user" id="user"  value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="pass">Contraseña</label>
+            <input type="password" class="form-control" ng-model="pass"id="pass" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+
+
+          <div class="alert alert-danger" role="alert"id="ale" style="display:none" >
+            <p>Todos los campos son obligatorios<P>
+
+            </div>
+          </div>
+          <button class="btn btn-primary"  style="background-color: #FFBF43;"ng-click="valores()">Registarme</button>
+        </div>
+
+      </div>
+
+    </div>

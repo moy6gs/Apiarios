@@ -1,6 +1,6 @@
 var app= angular.module('Ap');
 
-app.controller('Comprar', function ($scope,$resource,$routeParams) {
+app.controller('Comprar', function ($scope,$resource,$routeParams,$filter) {
 
 $scope.total=0;
   var flor=$routeParams.flor;
@@ -31,7 +31,8 @@ $scope.total=0;
     {
 
     var api=$resource('/pedidos');
-    $scope.fecha="2018-07-28";
+    var date=$filter('date')(new Date($scope.fecha),'yyyy-MM-dd');
+    $scope.fecha=date;
     api.save({
       dire:$scope.direccionenv,
       amount:$scope.total,

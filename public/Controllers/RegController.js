@@ -1,51 +1,50 @@
 var app= angular.module('Ap');
 
-app.controller('Registrar', function ($scope,$resource) {
+app.controller('Registrar', function ($scope,$resource,$filter) {
 
   $scope.valores=function()
   {
-console.log('hey')
-  if(validar())
-  {
-    $scope.birthdate="2018-05-06";
-    var api=$resource('/reg');
-    api.save({
-      nombre:$scope.nom,
-      apep:$scope.ap,
-      apem:$scope.am,
-      tel:$scope.phone,
-      direccion:$scope.dire,
-      emaill:$scope.email,
-      birth:$scope.birthdate,
-      direff:$scope.diref,
-      rfcn:$scope.rfc,
-      sex:$scope.sexo,
-      username:$scope.user,
-      password:$scope.pass
+    if(validar())
+    {
+      var date=$filter('date')(new Date($scope.birthdate),'yyyy-MM-dd');
+      $scope.birthdate=date
+      var api=$resource('/reg');
+      api.save({
+        nombre:$scope.nom,
+        apep:$scope.ap,
+        apem:$scope.am,
+        tel:$scope.phone,
+        direccion:$scope.dire,
+        emaill:$scope.email,
+        birth:$scope.birthdate,
+        direff:$scope.diref,
+        rfcn:$scope.rfc,
+        sex:$scope.sexo,
+        username:$scope.user,
+        password:$scope.pass
 
-    },function (res) {
+      },function (res) {
 
-      console.log("esta es la respuesta"+res)
-      if(res.session)
-      {
-        var api=$resource('/login');
-        api.save({
-          username:res.user,
-          password:res.pass
-        },function(res){
 
-          console.log('iniciado sesion despues de registrar')
-          window.location='/comprar.html';
+        if(res.session)
+        {
+          var api=$resource('/login');
+          api.save({
+            username:res.user,
+            password:res.pass
+          },function(res){
 
-        })
+            window.location='/index.html';
+
+          })
+        }
       }
-    }
 
-  )
-}
-else {
-$('#ale').css('display','initial')
-}
+    )
+  }
+  else {
+    $('#ale').css('display','initial')
+  }
 }
 
 function validar() {
@@ -63,7 +62,7 @@ function validar() {
   if($scope.user==undefined) return false;
   if($scope.pass==undefined) return false;
 
-return true;
+  return true;
 
 }
 
