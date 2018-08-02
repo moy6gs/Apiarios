@@ -11,7 +11,7 @@ pass.deserializeUser(function (user,done) {
 pass.use(new local(
   function(username, password, done) {
     con.query("select user, password from clientes where user='"+username+"' and password='"+password+"'",function (err,result) {
-  
+
       if (err) { return done(err); }
       if (!result[0]) { return done(null, false); }
 
