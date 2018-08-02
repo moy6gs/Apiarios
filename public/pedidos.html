@@ -1,0 +1,46 @@
+
+
+    <div class="alert " role="alert"id="ale"  style="margin:0px;display:none;">
+      <p>Aun no haz realizado ningun pedido<p>
+    </div>
+
+<div id="showpedidos">
+<h1 class="display-4">Mis pedidos</h1>
+  <table class="table table-striped ">
+    <thead>
+      <tr>
+        <th scope="col">Id del pedido</th>
+        <th scope="col">Floracion</th>
+        <th scope="col">Cantidad de miel (lt)</th>
+        <th scope="col">Direccion de envio</th>
+          <th scope="col">Forma de pago</th>
+            <th scope="col">Total</th>
+            <th scope="col">Estatus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="p in pedidos">
+
+        <td>{{p.id_pedido}}</td>
+        <td>{{p.Floracion}}</td>
+        <td>{{p.cantidad_miel}}</td>
+        <td>{{p.direccion_envio}}</td>
+        <td>{{p.forma_pago}}</td>
+        <td>{{p.total}}</td>
+
+      <td><p>{{p.baucher}}</p><form action="/uploadimg" enctype="multipart/form-data" method="post">
+
+
+    <input type="file" name="upload" uploader-model="file" multiple>
+      <input type="hidden" name="pedido" value="{{p.id_pedido}}">
+
+    <input type="submit"  value="Subir" class="btn" style="background-color:#FFBF43; color:white">
+</form></th>
+
+
+
+      </tr>
+
+    </tbody>
+  </table>
+</div>

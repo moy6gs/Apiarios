@@ -1,0 +1,19 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+
+}
+
+footer{
+  min-height:100%;
+   position:absolute;
+   margin-left: auto;
+   margin-right: auto;
+   left:0; right:0;
+
+
+
+}

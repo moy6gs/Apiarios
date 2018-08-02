@@ -1,0 +1,54 @@
+
+
+<div id="comprar"  class="text-center" style="background-color:#F8F9FA"; >
+
+  <div class="container card " style="background-color:#F8F9FA;">
+    <h5 class="card-header">Comprar</h5>
+    <div class="card-body">
+      <div >
+      <h5 class="display-4">Haz tu pedido</h5>
+      <p class="display-4">Miel {{flor}}.</p>
+
+
+
+      <h1>Precio por litro<span class="badge badge-secondary">{{precioflor}}</span></h1>
+      <h1>Total<span class="badge badge-secondary" id="total">${{total}}</span></h1>
+    </div>
+
+      <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text"  style="background-color: #FFBF43;"id="basic-addon3" >Cantidad de Litros</span>
+    </div>
+    <input type="number" ng-model="cantidad" ng-change="calc()" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  </div>
+
+
+  <div class="input-group mb-3">
+<div class="input-group-prepend">
+  <span class="input-group-text"  style="background-color: #FFBF43;" id="basic-addon3">Direccion de Envio</span>
+</div>
+<input type="text" class="form-control" ng-model="direccionenv" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text"  style="background-color: #FFBF43;" id="basic-addon3">Fecha de Entrega</span>
+</div>
+<input type="date" class="form-control" ng-model="fecha" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="alert alert-danger" role="alert"id="ale">
+  <p>Inicia Sesion para hacer un pedido<P>
+  <a href="#!login" class="badge badge-primary" style="background-color: #FFBF43;" >Iniciar Sesion</a>
+  <a href="#!registrar" style="background-color: #445A63;" class="badge badge-primary">Registrarme</a>
+</div>
+
+
+
+  <button class="btn btn-primary btn-lg"  style="background-color:#445A63; "ng-click="pedir()">Pedir</button>
+    </div>
+    <div class="alert alert-danger" role="alert"id="ale2" style="display:none">
+      <p>Todos los campos son obligatorios<P>
+
+    </div>
+  </div>
+</div>
