@@ -1,0 +1,2 @@
+# Apiarios
+Apiarios HERGAR es un negocio que empezó como un pasatiempo por el padre de Jose Arturo Garcia Cabrera hace 30 años en la comunidad de Ciénega, Jerez. Sus principales clientes son de venta al pormenor, sin embargo cuentan con clientes que demandan una mayor cantidad de miel en la ciudad de Guadalajara y el DF con compras de hasta 290kg de miel por pedido. La venta al menudeo es la lenta,pero deja un margen de beneficio mayor , debido a que la producción es mayor que a la demanda local se opta por exportar a un precio menor para no perder la cosecha.
